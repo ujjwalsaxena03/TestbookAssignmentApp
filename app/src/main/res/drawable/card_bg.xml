@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/rectangle">
+        <shape android:shape="rectangle"  >
+            <gradient  android:startColor="#465376" android:endColor="#5F6C8F"/>
+        </shape>
+    </item>
+
+
+    <item android:id="@+id/circlebig" android:left="-50dp" android:top="-50dp" android:right="90dp" android:height="300dp">
+        <shape android:shape="oval">
+            <gradient android:startColor="#465376" android:endColor="#5F6C8F"/>
+        </shape>
+    </item>
+
+    <item android:id="@+id/circlesmall" android:left="145dp" android:top="65dp" android:right="-50dp" android:height="250dp">
+        <shape android:shape="oval">
+            <gradient android:startColor="#465376" android:endColor="#5F6C8F"/>
+        </shape>
+    </item>
+
+</layer-list>
+
+    <!--    gradient colors used for clarity and illustration.
+            even if not specified here, they will work through call by adapter.      -->

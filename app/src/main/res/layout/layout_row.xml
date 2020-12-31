@@ -8,49 +8,57 @@
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
     android:layout_marginStart="15dp"
-    android:layout_marginEnd="15dp">
+    android:layout_marginEnd="15dp"
+    android:id="@+id/layoutCard"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCons"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:padding="10dp">
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp">
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="9dp"
-            android:layout_marginLeft="9dp"
-            android:layout_marginBottom="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="122dp"
+            android:ellipsize="end"
             android:hint="hello world"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:lines="2"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/select_icon"
-            android:layout_width="199dp"
-            android:layout_height="40dp"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
             android:layout_marginStart="4dp"
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:scaleType="fitStart"
-            android:src="@drawable/select2"
+            android:src="@drawable/selectlogo"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/black" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/faculty"
-            android:layout_width="118dp"
-            android:layout_height="113dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginBottom="2dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
